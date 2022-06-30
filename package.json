@@ -1,0 +1,23 @@
+{
+  "name": "daily-hand-write",
+  "version": "1.0.0",
+  "description": "记录前端高频手写题",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gumingWu/daily-hand-write.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gumingWu/daily-hand-write/issues"
+  },
+  "homepage": "https://github.com/gumingWu/daily-hand-write#readme",
+  "dependencies": {
+    "vitepress": "^1.0.0-alpha.4"
+  }
+}
