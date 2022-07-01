@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gumingWu/daily-hand-write#readme",
   "dependencies": {
-    "vitepress": "^1.0.0-alpha.4"
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
   }
 }
