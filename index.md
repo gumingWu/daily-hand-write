@@ -15,4 +15,15 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/nice-people-frontend-community/nice-handwriting-practice
+
+features:
+  - icon: ⚡️
+    title: Everyday Update
+    details: everyday update one question.
+  - icon: 🖖
+    title: Many Answer
+    details: group member will provide their answer.
+  - icon: 🛠️
+    title: Join
+    details: u can join the group, when u finish more than 100 questions in leetcode.
 ---

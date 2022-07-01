@@ -10,5 +10,15 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/gumingWu/daily-hand-write" },
     ],
+    sidebar: [
+      {
+        text: "Guide",
+        items: [{ text: "介绍", link: "/guide/" }],
+      },
+    ],
+    footer: {
+      message: "Stay Hungry Stay Foolish.",
+      copyright: "Copyright © 2022-present Gaaming Wu",
+    },
   },
 });
