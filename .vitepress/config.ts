@@ -5,4 +5,10 @@ export default defineConfig({
   description: "daily handwrite docs",
   base: "/daily-hand-write/",
   outDir: "docs",
+  themeConfig: {
+    logo: "/battery-charging.svg",
+    socialLinks: [
+      { icon: "github", link: "https://github.com/gumingWu/daily-hand-write" },
+    ],
+  },
 });

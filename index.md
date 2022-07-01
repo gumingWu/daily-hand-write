@@ -10,8 +10,8 @@ hero:
     alt: DailyUp
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/what-is-vitepress
+      text: Introduction
+      link: /guide/
     - theme: alt
       text: View on GitHub
       link: https://github.com/nice-people-frontend-community/nice-handwriting-practice
