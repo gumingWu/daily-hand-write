@@ -3,6 +3,6 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "DailyUp",
   description: "daily handwrite docs",
-  base: "/",
+  base: "/daily-hand-write/",
   outDir: "docs",
 });
