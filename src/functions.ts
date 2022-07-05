@@ -7,7 +7,6 @@ export let Issues_Total = 0
 
 export async function resolveIssuesList(issuesList) {
   Issues_Total = issuesList.length
-  console.log(Issues_Total);
 
   await fs.writeJson(join(DIR_PACKAGE, 'index.json'), issuesList, { spaces: 2 })
 }
