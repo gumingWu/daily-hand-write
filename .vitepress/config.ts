@@ -1,4 +1,7 @@
 import { defineConfig } from "vitepress";
+import { getMainSidebar } from '../src/functions';
+
+const MainSidebar = getMainSidebar()
 
 export default defineConfig({
   title: "DailyUp",
@@ -15,6 +18,7 @@ export default defineConfig({
         text: "Guide",
         items: [{ text: "介绍", link: "/guide/" }],
       },
+      ...MainSidebar
     ],
     footer: {
       message: "Stay Hungry Stay Foolish.",
