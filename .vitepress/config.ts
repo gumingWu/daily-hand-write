@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
-import { getMainSidebar } from '../src/functions';
+import { getSideBarMenu } from "./functions";
 
-const MainSidebar = getMainSidebar()
+const MainSidebar = getSideBarMenu()
 
 export default defineConfig({
   title: "DailyUp",

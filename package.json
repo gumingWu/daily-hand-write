@@ -4,6 +4,7 @@
   "description": "记录前端高频手写题",
   "main": "index.js",
   "scripts": {
+    "dev": "pnpm script:dev && pnpm docs:dev",
     "docs:dev": "vitepress dev --open",
     "docs:build": "vitepress build",
     "docs:serve": "vitepress serve",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/gumingWu/daily-hand-write#readme",
   "dependencies": {
     "cross-env": "^7.0.3",
+    "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
     "magic-string": "^0.26.2",
     "ohmyfetch": "^0.4.18",
