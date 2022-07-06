@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm script:dev && pnpm docs:dev",
+    "build": "pnpm script:prd && pnpm docs:build",
     "docs:dev": "vitepress dev --open",
     "docs:build": "vitepress build",
     "docs:serve": "vitepress serve",

@@ -25,7 +25,7 @@ export async function createIssuesMd(issuesItem) {
   await fs.ensureDir(mdDirPath)
 
   const showTitle = title.replace(/:|：/, '.')
-  const mdPath = join(mdDirPath, `${showTitle}.md`)
+  const mdPath = join(mdDirPath, `${showTitle.trim()}.md`)
   await fs.createFile(mdPath)
 
   const mdContent = await prepareMdContent(issuesItem)
