@@ -10,7 +10,7 @@
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
   "editor.lineNumbers": "interval",
-  "editor.multiCursorModifier": "ctrlCmd",
+  // "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
@@ -177,7 +177,7 @@
   "volar.codeLens.scriptSetupTools": true,
   "volar.completion.preferredTagNameCase": "pascal",
   "volar.showWelcomePage": false,
-  "volar.takeOverMode.enabled": "auto",
+  "volar.takeOverMode.enabled": true,
   "windicss.enableCodeFolding": false,
   "prettier.enable": false, // I only use Prettier for manually formatting
   "prettier.printWidth": 200,

@@ -24,6 +24,7 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "fs-extra": "^10.1.0",
+    "magic-string": "^0.26.2",
     "ohmyfetch": "^0.4.18",
     "tsx": "^3.7.1",
     "vitepress": "^1.0.0-alpha.4",
