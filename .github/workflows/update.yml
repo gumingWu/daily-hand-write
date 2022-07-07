@@ -5,7 +5,7 @@ on:
     - cron: '*/2 * * * *'
 
 jobs:
-  update:
+  update-npm:
     runs-on: ubuntu-latest
     env:
       SECRET: ${{ secrets.ISSUES_TOKEN }}
