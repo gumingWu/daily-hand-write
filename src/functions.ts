@@ -4,6 +4,7 @@ import MagicString from 'magic-string'
 
 const DIR_PACKAGE = resolve(__dirname, '..')
 const DIR_CREATED_MD_PACKAGE = resolve(__dirname, '../autoPackage')
+const isPrd = process.env.NODE_ENV === 'prd'
 
 export async function resolveIssuesList(issuesList) {
   // 创建json文件，用于构造菜单
@@ -41,7 +42,10 @@ export async function prepareMdContent(issuesItem) {
   const strBody = body || 'no body~'
   strBody.replace(/\r\n/g, '\n')
 
-  str.append(`# ${title}\n\n`).append(`${strBody}\n`)
+  // 测试生产模式
+  const testPrdTitle = isPrd ? title + '-prd' : title
+
+  str.append(`# ${testPrdTitle}\n\n`).append(`${strBody}\n`)
 
   return str.toString() || ''
 }

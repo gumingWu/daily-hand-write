@@ -1,5 +1,36 @@
-name: Update docs
+name: Update Docs
 
 on:
-  push
+  schedule:
+    - cron: */2 * * * *
 
+jobs:
+  update:
+    run-on: ubuntu-latest
+    env:
+      SECRET: ${{ secrets.ISSUES_TOKEN }}
+    step:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install
+        run: npx pnpm i
+
+      - name: Run bash
+        run: npx pnpm build
+
+      - name: Commit
+        uses: EndBug/add-and-commit@v4
+        with:
+          message: "update docs"
+          add: "docs/*"
+        env:
+          GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN }}

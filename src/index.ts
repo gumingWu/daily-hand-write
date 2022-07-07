@@ -10,7 +10,7 @@ if(process.env.NODE_ENV === 'dev') {
   ISSUES_TOKEN = secret
 }
 if(process.env.NODE_ENV === 'prd') {
-  ISSUES_TOKEN = ''
+  ISSUES_TOKEN = process.env.SECRET
 }
 
 async function getIssuesListByFetch() {
