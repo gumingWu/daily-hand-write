@@ -6,6 +6,10 @@ const DIR_PACKAGE = resolve(__dirname, '..')
 const DIR_CREATED_MD_PACKAGE = resolve(__dirname, '../autoPackage')
 const isPrd = process.env.NODE_ENV === 'prd'
 
+if(isPrd) {
+  console.log(process.env.SECRET !== '' ? '我有密钥啊hhh' : '没有555');
+}
+
 export async function resolveIssuesList(issuesList) {
   // 创建json文件，用于构造菜单
   await fs.writeJson(join(DIR_PACKAGE, 'index.json'), issuesList, { spaces: 2 })
