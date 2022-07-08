@@ -30,4 +30,4 @@ jobs:
           message: "update docs"
           add: "docs/*"
         env:
-          GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
