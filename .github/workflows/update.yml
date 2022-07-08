@@ -24,10 +24,10 @@ jobs:
       - name: Run bash
         run: npx pnpm build
 
-      - name: Commit
+      - name: "Commit"
         uses: EndBug/add-and-commit@v4
         with:
           message: "update docs"
-          add: "*"
+          add: "docs/*"
         env:
           GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN }}
