@@ -21,7 +21,7 @@ export async function resolveIssuesList(issuesList) {
 }
 
 export async function createIssuesMd(issuesItem) {
-  const { title, created_at, body } = issuesItem
+  const { title, created_at } = issuesItem
 
   // 裁剪创建时间年月为目录
   const yearMon = created_at.slice(0, 7)
@@ -39,7 +39,7 @@ export async function createIssuesMd(issuesItem) {
 }
 
 export async function prepareMdContent(issuesItem) {
-  const { title, created_at, body } = issuesItem
+  const { title, created_at, updated_at, user, body } = issuesItem
 
   const str = new MagicString('')
 
@@ -49,7 +49,7 @@ export async function prepareMdContent(issuesItem) {
   // 测试生产模式
   const testPrdTitle = isPrd ? title + '-prd' : title
 
-  str.append(`# ${testPrdTitle}\n\n`).append(`${strBody}\n`)
+  str.append(`# ${testPrdTitle}\n\n`).append(`<IssueInfo created-at="${created_at}" updated-at="${updated_at}" creator="${user.login}"></IssueInfo>\n\n`).append(`${strBody}\n`)
 
   return str.toString() || ''
 }

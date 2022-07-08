@@ -7,6 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    IssuesPage: typeof import('./components/IssuesPage.vue')['default']
+    IssueInfo: typeof import('./components/IssueInfo.vue')['default']
   }
 }

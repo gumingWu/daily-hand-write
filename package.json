@@ -26,6 +26,7 @@
   "dependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
     "cross-env": "^7.0.3",
+    "dayjs": "^1.11.3",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
     "magic-string": "^0.26.2",
