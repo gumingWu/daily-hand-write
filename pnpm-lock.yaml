@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/fs-extra': ^9.0.13
+  '@types/node': ^18.0.3
   '@vitejs/plugin-vue': ^2.3.3
   cross-env: ^7.0.3
   dayjs: ^1.11.3
@@ -29,6 +31,10 @@ dependencies:
   vite: 2.9.13
   vitepress: 1.0.0-alpha.4
   vue: 3.2.37
+
+devDependencies:
+  '@types/fs-extra': 9.0.13
+  '@types/node': 18.0.3
 
 packages:
 
@@ -246,6 +252,16 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
     dev: false
+
+  /@types/fs-extra/9.0.13:
+    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
+    dependencies:
+      '@types/node': 18.0.3
+    dev: true
+
+  /@types/node/18.0.3:
+    resolution: {integrity: sha512-HzNRZtp4eepNitP+BD6k2L6DROIDG4Q0fm4x+dwfsr6LGmROENnok75VGw40628xf+iR24WeMFcHuuBDUAzzsQ==}
+    dev: true
 
   /@types/web-bluetooth/0.0.14:
     resolution: {integrity: sha512-5d2RhCard1nQUC3aHcq/gHzWYO6K0WJmAbjO7mQJgCQKtZpgXxv1rOM6O/dBDhDYYVutk1sciOgNSe+5YyfM8A==}

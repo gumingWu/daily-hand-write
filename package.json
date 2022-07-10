@@ -37,5 +37,9 @@
     "vite": "^2.9.13",
     "vitepress": "^1.0.0-alpha.4",
     "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.0.3"
   }
 }

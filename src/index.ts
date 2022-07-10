@@ -1,9 +1,9 @@
 import { $fetch } from "ohmyfetch";
 import { resolveIssuesList } from "./functions";
 
-let ISSUES_TOKEN = ''
-const owner = 'nice-people-frontend-community'
-const repo = 'nice-handwriting-practice'
+export let ISSUES_TOKEN = ''
+export const owner = 'nice-people-frontend-community'
+export const repo = 'nice-handwriting-practice'
 
 if(process.env.NODE_ENV === 'dev') {
   const { secret } = require('../env.local.js')
