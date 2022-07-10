@@ -12,7 +12,7 @@ const formatUpdatedAt = dayjs(props.updatedAt).format('YYYY-MM-DD HH:mm:ss')
 </script>
 
 <template>
-  <div class="issue-info-wrap">
+  <div flex="~ col" mt-4 mb-4 fs-14 text-4 shadow="~ white" hover-shadow="~ zinc" transition rounded>
     <div class="item">
       <label>Created at</label>
       <div>{{ formatCteatedAt }}</div>
@@ -29,19 +29,6 @@ const formatUpdatedAt = dayjs(props.updatedAt).format('YYYY-MM-DD HH:mm:ss')
 </template>
 
 <style scoped>
-.issue-info-wrap {
-  display: flex;
-  flex-direction: column;
-  margin: 15px 0;
-  font-size: 14px;
-  border-radius: 4px;
-  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
-  transition: all .3s;
-}
-.issue-info-wrap:hover {
-  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
-}
-
 .item {
   display: flex;
 }
