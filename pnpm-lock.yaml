@@ -4,6 +4,7 @@ specifiers:
   '@types/fs-extra': ^9.0.13
   '@types/node': ^18.0.3
   '@vitejs/plugin-vue': ^2.3.3
+  chalk: ^5.0.1
   cross-env: ^7.0.3
   dayjs: ^1.11.3
   fast-glob: ^3.2.11
@@ -19,6 +20,7 @@ specifiers:
 
 dependencies:
   '@vitejs/plugin-vue': 2.3.3_vite@2.9.13+vue@3.2.37
+  chalk: 5.0.1
   cross-env: 7.0.3
   dayjs: 1.11.3
   fast-glob: 3.2.11
@@ -602,6 +604,11 @@ packages:
   /cac/6.7.12:
     resolution: {integrity: sha512-rM7E2ygtMkJqD9c7WnFU6fruFcN3xe4FM5yUmgxhZzIKJk4uHl9U/fhwdajGFQbQuv43FAUo1Fe8gX/oIKDeSA==}
     engines: {node: '>=8'}
+    dev: false
+
+  /chalk/5.0.1:
+    resolution: {integrity: sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: false
 
   /chokidar/3.5.3:
